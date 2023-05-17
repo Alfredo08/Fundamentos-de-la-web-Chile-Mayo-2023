@@ -1,0 +1,86 @@
+body{
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 0;
+    background-color: rgb(246, 206, 132);
+}
+
+#titulo, .seccionDos{
+    color: red;
+    background-color: purple;
+    font-size: 50px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 15px;
+    border: 5px dotted black;
+    margin-bottom: 50px;
+    /*border-color: black;
+    border-style: dotted;
+    border-width: 5px;*/
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+h2{
+    border: 1px solid black;
+}
+
+li{
+    font-size: 40px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+.calificaciones{
+    background-color: aqua;
+    width: 50%;
+    height: 200px;
+}
+
+tr > td, th{
+    text-align: center;
+    border: 1px solid black;
+}
+
+form label{
+    color: #6c0a67;
+    background-color: rgb(198, 3, 3);
+}
+
+p{
+    border: 1px solid black;
+    /* padding-left: 20px;
+    padding-top: 50px;
+    padding-right: 5px;
+    padding-bottom: 30px; */
+    padding: 50px 5px 30px 20px;
+    margin: 100px 20px;
+}
+
+.sangria{
+    margin-left: 10px;
+}
+
+.special{
+    color: blue;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.seccionDos{
+    border-bottom: 2px solid black;
+    margin-bottom: 120px;
+}
+
+img{
+    width: 300px;
+    border: 10px solid green;
+    border-radius: 50%;
+}
+
+table{
+    border-spacing: 0;
+}
+
+.viñeta{
+    list-style: square;
+}
