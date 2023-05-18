@@ -1,0 +1,45 @@
+.seccion1{
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    height: 200px;
+    display: inline;
+}
+
+.especial{
+    display: inline;
+    border: 1px solid black;
+}
+
+.regular{
+    border: 1px solid black;
+}
+
+.seccion2{
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    height: 200px;
+    display: inline-block;
+}
+
+.mixto{
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.seccion3{
+    background-color: yellow;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    height: 200px;
+    display: block;
+    /*margin: 0 auto;*/
+}
+
+button{
+    display: block;
+}
