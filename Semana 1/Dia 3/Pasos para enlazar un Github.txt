@@ -1,0 +1,18 @@
+
+1. git init
+// Crea localmente el repositorio en nuestra carpeta
+
+2. git add .
+// Indicamos los archivos que vamos a subir al github
+
+3. git commit -m "Agregando archivos"
+// Generar el punto de guardado (La versión de guardado)
+
+4. git remote add origin url-del-github-a-enlazar
+// Se enlaza el repositorio de tu computadora con el repositorio en github
+
+5. git push -u origin main
+// Enviar los cambios al repositorio en github
+
+
+*. Para actualizar el github, volver a ejecutar pasos 2, 3 y 5
