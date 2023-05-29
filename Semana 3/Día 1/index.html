@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Dojo Weather </title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav> 
+                <h1 class="title">
+                    Dojo Weather
+                </h1>
+                <ul class="cities">
+                    <li onclick="changeCity(this)">
+                        Burbank
+                    </li>
+                    <li onclick="changeCity(this)">
+                        Chicago
+                    </li>
+                    <li onclick="changeCity(this)">
+                        Dallas
+                    </li>
+                </ul>
+            </nav>
+            <main>
+                <div class="currentCity">
+                    <h2>
+                        San Jose
+                    </h2>
+                    <div>
+                        <span>
+                            show temperature in 
+                        </span>
+                        <select onchange="changeMetric(this)">
+                            <option value="celcius"> ºC </option>
+                            <option value="farenheit"> ºF </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="forecast">
+                    <div class="day"> 
+                        <h3> Today </h3>
+                        <img class="weatherImage" src="./imagenes/some_rain.png" alt="rain">
+                        <div class="description">
+                            some rain
+                        </div>
+                        <div class="temperatures">
+                            <div class="maxTemp">
+                                <span class="max">24</span>º
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">18</span>º
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day"> 
+                        <h3> Tomorrow </h3>
+                        <img class="weatherImage" src="./imagenes/some_sun.png" alt="sun">
+                        <div class="description">
+                            some sun
+                        </div>
+                        <div class="temperatures">
+                            <div class="maxTemp">
+                                <span class="max">27</span>º
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">19</span>º
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day"> 
+                        <h3> Friday </h3>
+                        <img class="weatherImage" src="./imagenes/some_clouds.png" alt="cloudy">
+                        <div class="description">
+                            some clouds
+                        </div>
+                        <div class="temperatures">
+                            <div class="maxTemp">
+                                <span class="max">21</span>º
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">16</span>º
+                            </div>
+                        </div>
+                    </div>
+                    <div class="day"> 
+                        <h3> Saturday </h3>
+                        <img class="weatherImage" src="./imagenes/some_sun.png" alt="sun">
+                        <div class="description">
+                            some sun
+                        </div>
+                        <div class="temperatures">
+                            <div class="maxTemp">
+                                <span class="max">26</span>º
+                            </div>
+                            <div class="minTemp">
+                                <span class="min">21</span>º
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="cookie">
+            <img src="./imagenes/cookie.png" alt="Cookie image">
+            <div>
+                <h3>Stop! Cookie Time</h3>
+                <p>
+                    We use cookies (sadly not the edible ones) to personalize 
+                    content and ads, to provide social media features and to
+                    analyse our traffic. <a href="#"> Read more...</a>
+                </p>
+            </div>
+            <button onclick="acceptCookie(this)">
+                I Accept
+            </button>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojonary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <h1 class="title">Dojonary</h1>
+            <input onkeyup="desplegarTexto(this)"type="text" name="search" placeholder="Search" class="search">
+            <button class="btn login" onclick="intentoDeLogin(this)">Login</button>
+        </div>
+        <div class="row">
+            <div class="flex-2">
+                <div class="box definition">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn like" onclick="agregarLike(this)">
+                            <span class="numLikes">13</span> likes
+                        </button>
+                    </div>
+                    <p class="definition-text">A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+                <div class="box definition">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <p><em>noun</em></p>
+                        <p>Plural: <em>ninjas</em></p>
+                        <button class="btn like" onclick="agregarLike(this)">
+                            <span class="numLikes">37</span>  likes
+                        </button>
+                    </div>
+                    <p class="definition-text">A <a href="#">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>
+            <div class="flex-1">
+                <div class="box">
+                    <h2>Dojonary is defined by YOU</h2>
+                    <button class="btn add" onclick="agregaHTML(this)">Add Definition</button>
+                </div>
+                <div class="box">
+                    <h2>Select your country</h2>
+                    <select id="country" onchange="seleccionarPais(this)">
+                        <option value="-1"> Select a country</option>
+                        <option value="CH"> Chile </option>
+                        <option value="MX"> México </option>
+                        <option value="PE"> Perú </option>
+                        <option value="US"> USA </option>
+                    </select>
+                </div>
+                <div class="box">
+                    <h2>This is a cookie</h2>
+                    <button class="btn add" onclick="removerCookie(this)">Accept all cookies</button>
+                </div>
+                <div class="box">
+                    <h2>Ocultar</h2>
+                    <button class="btn add" onclick="ocultarElemento(this)">Ocultar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal ocultar">
+        <h2 class="titulo"> </h2>
+        <p class="contenido"> </p>
+        <button class="cerrarModal" onclick="cerrarModal(this)"> Cerrar </button>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
